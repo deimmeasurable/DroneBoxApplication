@@ -114,7 +114,7 @@ private BoxService boxService;
 
         List<BoxDto> available = boxService.getAvailableForLoading();
 
-        Assertions.assertEquals(1, available.size());
+        Assertions.assertEquals(2, available.size());
         Assertions.assertEquals("FREE1", available.get(0).getTxref());
     }
 
