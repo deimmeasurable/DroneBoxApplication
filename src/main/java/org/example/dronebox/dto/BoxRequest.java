@@ -19,4 +19,5 @@ public class BoxRequest implements Serializable {
     private String txref;
     private int weightLimit;
     private int battery;
+    private String boxState;
 }

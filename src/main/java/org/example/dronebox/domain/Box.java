@@ -11,6 +11,8 @@ import lombok.NoArgsConstructor;
 
 
 import java.util.ArrayList;
+import java.util.List;
+
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @Data
 @AllArgsConstructor
@@ -35,5 +37,5 @@ public class Box {
     @Enumerated(EnumType.STRING)
     private BoxState state = BoxState.IDLE;
     @OneToMany(mappedBy = "box", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private ArrayList<Item> items = new ArrayList<>();
+    private List<Item> items ;
 }

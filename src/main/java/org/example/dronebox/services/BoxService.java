@@ -1,5 +1,6 @@
 package org.example.dronebox.services;
 
+import org.example.dronebox.domain.Box;
 import org.example.dronebox.domain.Item;
 import org.example.dronebox.dto.BoxDto;
 import org.example.dronebox.dto.BoxRequest;
@@ -14,4 +15,5 @@ public interface BoxService {
     List<Item> loadItems(String txref, List<ItemRequest> itemsDto);
     List<Item> getLoadedItems(String txref);
     List<BoxDto> getAvailableForLoading();
+    Box getBox(String txref);
 }
